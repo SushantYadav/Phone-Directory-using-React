@@ -1,3 +1,1 @@
-# react-smwn7c
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-smwn7c)
+# Creating Phone Directory using ReactJS
