@@ -18,6 +18,7 @@ class AddSubscriber extends Component {
   };
 
   render() {
+    const { name, phone } = this.state;
     return (
       <div>
         <Header heading="Add Subscriber" />
@@ -53,9 +54,9 @@ class AddSubscriber extends Component {
                 Subscriber to be added:
               </span>
               <br />
-              <span className="subscriber-info">Name:</span>
+              <span className="subscriber-info">Name: {name}</span>
               <br />
-              <span className="subscriber-info">Phone:</span>
+              <span className="subscriber-info">Phone: {phone}</span>
             </div>
             <button type="submit" className="custom-btn add-btn">
               Add
