@@ -7,22 +7,22 @@ class App extends Component {
     this.state = {
       subscriberListToShow: [],
     };
-    console.log('Constructor Called');
+    /* console.log('Constructor Called'); */
   }
   deletehandler() {
     alert('Delete Clicked');
   }
-  componentDidMount() {
+  /* componentDidMount() {
     console.log('Component Did Mount Called');
     let newSubscriber = { id: 1, Name: 'Sushant', Phone: '1234567890' };
     let subscribersList = this.state.subscriberListToShow;
     subscribersList.push(newSubscriber);
     this.setState({ subscriberListToShow: subscribersList });
     console.log('State', this.state);
-  }
+  } */
 
   render() {
-    console.log('Render Called');
+    /* console.log('Render Called'); */
     /* let subscribers = [
       { id: 1, Name: 'Sushant', Phone: '1234567890' },
       { id: 2, Name: 'Sushant', Phone: '1234567890' },
