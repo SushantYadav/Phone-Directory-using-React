@@ -2,6 +2,21 @@ import React, { Component } from 'react';
 import Header from './Header';
 import './AddSubscriber.css';
 class AddSubscriber extends Component {
+  constructor() {
+    super();
+    this.state = {
+      id: 0,
+      name: '',
+      phone: '',
+    };
+  }
+  inputChangedHandler = (e) => {
+    const state = this.state;
+    state[e.target.name] = e.target.value;
+    this.setState(state);
+    console.log(state);
+  };
+
   render() {
     return (
       <div>
@@ -18,6 +33,7 @@ class AddSubscriber extends Component {
               type="text"
               className="input-control"
               name="name"
+              onChange={this.inputChangedHandler}
             />
             <br />
             <br />
@@ -30,6 +46,7 @@ class AddSubscriber extends Component {
               type="text"
               className="input-control"
               name="phone"
+              onChange={this.inputChangedHandler}
             />
             <div className="subscriber-info-container">
               <span className="subscriber-to-add-heading">
