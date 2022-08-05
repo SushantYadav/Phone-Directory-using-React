@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+import './ShowSubscribers.css';
 import Header from './Header';
-class App extends Component {
+class ShowSubscribers extends Component {
   constructor() {
     super();
     this.state = {
@@ -58,4 +58,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ShowSubscribers;
